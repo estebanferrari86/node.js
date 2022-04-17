@@ -1,6 +1,5 @@
 const fs = require('fs');
 const colors = require('colors');
-/* const argv = require('./config/yargs'); */
 
 const crearArchivo = async(base = 5, listar = false, hasta) => {
 

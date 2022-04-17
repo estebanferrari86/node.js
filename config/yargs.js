@@ -1,21 +1,3 @@
-/* const opts = {
-    base: {
-        demand: true,
-        alias: 'b'
-    },
-    limite: {
-        alias: 'l',
-        default: 10
-    }
-}
-
-
-const argv = require('yargs')
-    .command('listar', 'Imprime en consola la tabla de multiplicar', opts)
-    .command('crear', 'Genera un archivo con la tabla de multiplicar', opts)
-    .help()
-    .argv; */
-
 const argv = require('yargs')
     .option('b', {
         alias: 'base',
@@ -32,6 +14,10 @@ const argv = require('yargs')
         type: 'number',
         default: 5
     })
+    .command('listar', 'Imprime en consola la tabla de multiplicar')
+    .command('base', 'Numero base a multiplicar')
+    .command('hasta', 'Numero hasta el que llega la multiplicacion')
+    .help()
     .check((argv, option) => {
         if (isNaN(argv.b)) {
             throw 'La base tiene que ser un numero'
