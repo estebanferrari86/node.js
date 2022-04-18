@@ -2,7 +2,9 @@
 Comandos: 
 
   app listar  Imprime en consola la tabla de multiplicar
+  
   app base    Numero base a multiplicar 
+  
   app hasta   Numero hasta el que llega la multiplicacion 
   
 
